@@ -3,8 +3,12 @@
 // =============================
 
 .logo-wrapper {
-  float: left;
+  align-self: flex-start;
 
+  img {
+    height: 60px;
+    margin-right: 15px;
+  }
   .logo {
     font-size: $logo-font-size;
     font-family: $logo-font-family;

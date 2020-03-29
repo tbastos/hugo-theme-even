@@ -84,19 +84,19 @@ license:
 
 # ===== counter =====
 archiveCounter:
-  one: "{{ .Count }} Post In Total"
-  other: "{{ .Count }} Posts In Total"
+  one: "{{ .Count }} post in total"
+  other: "{{ .Count }} posts in total"
 
 tagCounter:
-  one: "{{ .Count }} Tag In Total"
-  other: "{{ .Count }} Tags In Total"
+  one: "{{ .Count }} tag in total"
+  other: "{{ .Count }} tags in total"
 
 zeroTagCounter:
   other: "No tags"
 
 categoryCounter:
-  one: "{{ .Count }} Category In Total"
-  other: "{{ .Count }} Categories In Total"
+  one: "{{ .Count }} category in total"
+  other: "{{ .Count }} categories in total"
 
 zeroCategoryCounter:
   other: "No categories"
