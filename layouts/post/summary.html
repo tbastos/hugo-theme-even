@@ -21,6 +21,13 @@
     <div class="post-summary">
       {{ .Summary }}
     </div>
+    {{ with .Params.tags -}}
+      <div class="post-summary-tags">
+        {{ range . -}}
+          <a href="{{ "tags" | relLangURL }}/{{ . | urlize }}/">{{ . }}</a>
+        {{ end -}}
+      </div>
+    {{- end -}}
     <div class="read-more">
       <a href="{{ .RelPermalink }}" class="read-more-link">{{ T "readMore" }}</a>
     </div>

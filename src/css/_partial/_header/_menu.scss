@@ -19,7 +19,8 @@
         margin-left: $menu-item-margin-left;;
       }
 
-      @include underline-from-center;
+      //@include underline-from-center;
+      &:hover { text-decoration: underline; }
     }
 
     .menu-item-link {

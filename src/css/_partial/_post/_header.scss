@@ -9,7 +9,8 @@
   }
 
   .post-link {
-    @include underline-from-center;
+    //@include underline-from-center;
+    &:hover { text-decoration: underline; }
   }
 
   .post-meta {

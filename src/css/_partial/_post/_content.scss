@@ -102,10 +102,25 @@
     margin-bottom: 1em;
   }
 
+  .post-summary-tags {
+    float: right;
+
+    a {
+      margin-right: 5px;
+      word-break: break-all;
+      font-size: 14px;
+      //color: $post-meta-font-color;
+
+      &::before {
+        content: '#';
+      }
+    }
+  }
+
   .read-more {
     .read-more-link {
       color: $theme-color;
-      font-size: 1.1em;
+      //font-weight: 1.1em;
       font-family: $global-serif-font-family;
     
       &:hover {
