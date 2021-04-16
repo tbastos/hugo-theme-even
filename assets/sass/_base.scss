@@ -61,7 +61,12 @@ a {
   #{$header} {
     font-size: $size;
     font-family: $global-serif-font-family;
+    margin: 1.5em 0 0 0;
   }
+}
+
+p, blockquote, pre, form, table {
+  margin: 12px 0 0 0;
 }
 
 .container {

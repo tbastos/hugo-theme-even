@@ -1,24 +1,13 @@
 @font-face {
-<<<<<<< HEAD:src/css/_iconfont.scss
   font-family: 'fontello';
-  src: url('../font/fontello.eot');
-  src: url('../font/fontello.eot#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2') format('woff2'),
-       url('../font/fontello.woff') format('woff'),
-       url('../font/fontello.ttf') format('truetype'),
-       url('../font/fontello.svg#fontello') format('svg');
+  src: url('../fonts/fontello/fontello.eot');
+  src: url('../fonts/fontello/fontello.eot#iefix') format('embedded-opentype'),
+       url('../fonts/fontello/fontello.woff2') format('woff2'),
+       url('../fonts/fontello/fontello.woff') format('woff'),
+       url('../fonts/fontello/fontello.ttf') format('truetype'),
+       url('../fonts/fontello/fontello.svg#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
-=======
-  font-family: 'iconfont';
-
-  src: url('../fonts/iconfont/iconfont.eot');
-  src: url('../fonts/iconfont/iconfont.eot#iefix') format('embedded-opentype'), // not '?#iefix', because webpack will add '?hash=[hash]'
-  url('../fonts/iconfont/iconfont.woff') format('woff'),
-  url('../fonts/iconfont/iconfont.ttf') format('truetype'),
-  url('../fonts/iconfont/iconfont.svg#iconfont') format('svg');
-  font-display: swap;
->>>>>>> upstream/master:assets/sass/_iconfont.scss
 }
 
 %base-iconfont {

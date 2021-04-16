@@ -52,17 +52,29 @@
     }
   }
 
-  blockquote {
-    margin: 2em 0;
-    padding: 10px 20px;
-    position: relative;
-    color: rgba(#34495e, 0.8);
-    background-color: $content-blockquote-backgroud;
-    border-left: $content-blockquote-border-left;
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  ul {
+    padding-left: 24px;
+    li+li {
+      margin-top: 4px;
+    }
+  }
 
+  blockquote {
+    padding: 10px 20px 10px 16px;
+    font-style: italic;
+    line-height:1.6;
+    position: relative;
+    color: rgb(112, 112, 112);
+    border-left: 2px solid rgb(223, 225, 230);
     p {
       margin: 0;
+    }
+    cite {
+      font-style: normal;
+      font-weight: 500;
+    }
+    cite::before{
+      content: "— ";
     }
   }
 
@@ -148,6 +160,8 @@
   }
 
   figure {
+    margin: 1em 0px;
+
     &.center {
       text-align: center;
     }

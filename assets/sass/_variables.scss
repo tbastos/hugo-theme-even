@@ -5,7 +5,7 @@
 // ========== Theme Color ========== //
 // Config here to change theme color
 // Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
-$theme-color-config: 'Mint Green';
+$theme-color-config: 'Default';
 
 // Default theme color map
 $theme-color-map: (
@@ -22,6 +22,7 @@ $theme-color-map: (
   $theme-color-config: 'Default';
 }
 $theme-color-list: map-get($theme-color-map, $theme-color-config);
+$theme-color-list: rgb(0, 82, 204) rgb(250, 251, 252);
 
 // Default theme color of the site.
 $theme-color: nth($theme-color-list, 1) !default;
@@ -38,12 +39,12 @@ $gray: #cacaca !default;
 $dark-gray: #8a8a8a !default;
 
 // ======= Google Fonts ======= //
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed|Open+Sans);
 
 
 // ========== Global ========== //
 // Text color of the body.
-$global-font-color: #34495e !default;
+$global-font-color: rgb(23, 43, 77) !default;
 
 // Font size attribute applied to '<html>' and '<body>'.
 $global-font-size: 16px !default;
@@ -58,22 +59,22 @@ $global-container-padding: 0 20px !default;
 $global-lineheight: 1.5 !default;
 
 // Font family of the site.
-$global-font-family: 'Open Sans', sans-serif !default;
+$global-font-family: -apple-system, 'Open Sans', sans-serif !default;
 
 // Serif font family of the site.
-$global-serif-font-family: 'Roboto Slab', serif !default;
+$global-serif-font-family: 'Roboto Condensed', serif !default;
 
 // Background color of the site.
 $global-background: $white !default;
 
 // Headings font size of the site.
 $global-headings: (
-  h1: 26px,
-  h2: 24px,
-  h3: 20px,
-  h4: 16px,
-  h5: 14px,
-  h6: 14px
+  h1: 30px,
+  h2: 26px,
+  h3: 22px,
+  h4: 20px,
+  h5: 18px,
+  h6: 16px
 ) !default;
 
 
@@ -82,10 +83,10 @@ $global-headings: (
 $header-padding: 20px 20px !default;
 
 // Font size of the logo.
-$logo-font-size: 30px !default;
+$logo-font-size: 36px !default;
 
 // Font family of the logo.
-$logo-font-family: 'Roboto Slab', serif !default;
+$logo-font-family: 'Roboto Condensed', serif !default;
 
 // Margin of menu item.
 $menu-item-margin-left: 21px !default;
@@ -94,7 +95,7 @@ $menu-item-margin-left: 21px !default;
 $menu-item-mobile-margin: 5px !default;
 
 // Font size of menu item link.
-$menu-link-font-size: 18px !default;
+$menu-link-font-size: 21px !default;
 
 // Height of the mobile header.
 $mobile-navbar-height: 50px !default;
@@ -110,7 +111,7 @@ $post-padding: 1.5em 0 !default;
 $post-border: 1px solid $light-gray !default;
 
 // Font size of post title.
-$post-title-font-size: 27px !default;
+$post-title-font-size: 33px !default;
 
 // Font weight of post title.
 $post-title-font-weight: 400 !default;
@@ -148,10 +149,10 @@ $post-toc-backgroud: rgba($deputy-color, 0.6) !default;
 $post-toc-margin-left: $global-body-width - 15px !default;
 
 // Font size of the post toc title.
-$post-toc-title-size: 20px !default;
+$post-toc-title-size: 21px !default;
 
 // Font size of the post toc content.
-$post-toc-content: 15px !default;
+$post-toc-content: 16px !default;
 
 // List style of the post toc list.
 $post-toc-list-style: square !default;
@@ -279,10 +280,10 @@ $archive-margin: 2em 0px !default;
 $archive-max-width: 550px !default;
 
 // Font size of the archive name.
-$archive-name-font-size: 30px !default;
+$archive-name-font-size: 33px !default;
 
 // Font size of the collection title.
-$collection-title-font-size: 28px !default;
+$collection-title-font-size: 30px !default;
 
 // Padding of the archive post.
 $archive-post-padding: 3px 20px !default;
@@ -304,8 +305,11 @@ $archive-post-hover-transition: 0.2s ease-out !default;
 $archive-post-hover-transform: translateX(4px) !default;
 
 // ========== General Terms ========== //
+// Font size of the terms (tags)
+$terms-font-size: 18px !default;
+
 // Font size of the terms title.
-$terms-title-size: 18px !default;
+$terms-title-size: 21px !default;
 
 // Border bottom of the terms title.
 $terms-title-border-bottom: 2px solid $theme-color !default;
@@ -314,4 +318,4 @@ $terms-title-border-bottom: 2px solid $theme-color !default;
 $terms-link-margin: 5px 10px !default;
 
 // Font size of the terms count
-$terms-count-font-size: 12px !default;
+$terms-count-font-size: 14px !default;
